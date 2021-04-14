@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vJ-UX-UxQ">
+                                <rect key="frame" x="30" y="802" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fiF-7i-ycq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Make Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="makePhotoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qa8-TN-UpZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-Ro-e5i">
+                                <rect key="frame" x="30" y="742" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ULf-sV-v24"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save to gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOd-J2-F8k"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eoN-LB-BmG">
+                                <rect key="frame" x="20" y="64" width="374" height="608"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faO-n7-RnF">
+                                <rect key="frame" x="30" y="682" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wL5-Qy-Mbe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showGalleryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKU-Fj-W5T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6vJ-UX-UxQ" secondAttribute="bottom" constant="10" id="0Wr-eL-hep"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yaN-Ro-e5i" secondAttribute="trailing" constant="30" id="236-4T-bKZ"/>
+                            <constraint firstItem="faO-n7-RnF" firstAttribute="top" secondItem="eoN-LB-BmG" secondAttribute="bottom" constant="10" id="I9T-Ep-1CE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="faO-n7-RnF" secondAttribute="trailing" constant="30" id="JAE-3B-Frt"/>
+                            <constraint firstItem="6vJ-UX-UxQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="MSn-tL-tj2"/>
+                            <constraint firstItem="eoN-LB-BmG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="RWp-H6-bLn"/>
+                            <constraint firstItem="6vJ-UX-UxQ" firstAttribute="top" secondItem="yaN-Ro-e5i" secondAttribute="bottom" constant="10" id="Vqw-Hs-YjQ"/>
+                            <constraint firstItem="yaN-Ro-e5i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="b9v-L4-caX"/>
+                            <constraint firstItem="faO-n7-RnF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bZ6-Hf-ycC"/>
+                            <constraint firstItem="yaN-Ro-e5i" firstAttribute="top" secondItem="faO-n7-RnF" secondAttribute="bottom" constant="10" id="ebQ-Th-bsP"/>
+                            <constraint firstItem="eoN-LB-BmG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jYH-2B-p09"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6vJ-UX-UxQ" secondAttribute="trailing" constant="30" id="mcQ-Nu-Bbh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eoN-LB-BmG" secondAttribute="trailing" constant="20" id="sTz-5x-AI9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="galleryButton" destination="faO-n7-RnF" id="Uos-II-j7O"/>
+                        <outlet property="imageView" destination="eoN-LB-BmG" id="Hkc-dj-2Dj"/>
+                        <outlet property="makePhotoButton" destination="6vJ-UX-UxQ" id="F1h-0c-1Ph"/>
+                        <outlet property="saveButton" destination="yaN-Ro-e5i" id="PXw-aL-pi4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.42028985507247" y="0.6696428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
