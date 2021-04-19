@@ -9,6 +9,18 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 
+# Xcode personal settings
+xcuserdata/
+
+# Cocoapods
+Pods/
+
+# Build Artifacts
+build/
+.build/
+DerivedData/
+
+
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 build/
 DerivedData/
