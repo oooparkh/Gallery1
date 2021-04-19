@@ -22,7 +22,6 @@
 /* Begin PBXBuildFile section */
 		3D2E5397C72E21ABCEA52B6C1D3F5CC8 /* Pods-Gallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2947250FF10A6981B7DEE68C2FA44F26 /* Pods-Gallery-dummy.m */; };
 		868E4F69841BD5A4B7F982BD0A041540 /* Pods-Gallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DC7BA79320642C72EC11C22B3CA79D /* Pods-Gallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE7C7D23262D8EFC00B68C75 /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE7C7D22262D8EFC00B68C75 /* swiftlint.yml */; };
 		E08DC6EE92F9C2342D47B2832C110B67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +46,6 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1F14F11D43F39097ABD19DE1B7EEE97 /* Pods-Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gallery.debug.xcconfig"; sourceTree = "<group>"; };
 		B6DC7BA79320642C72EC11C22B3CA79D /* Pods-Gallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gallery-umbrella.h"; sourceTree = "<group>"; };
-		CE7C7D22262D8EFC00B68C75 /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		D3620A59712BAEFD1E4C1F95A11CAE5B /* Pods_Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FCDF825A01DB3BA539110872567C76 /* Pods-Gallery-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gallery-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */,
-				CE7C7D22262D8EFC00B68C75 /* swiftlint.yml */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftLint";
@@ -215,7 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7C7D23262D8EFC00B68C75 /* swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

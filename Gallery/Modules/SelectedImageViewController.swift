@@ -9,7 +9,6 @@ class SelectedImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         imageView.image = selectedImage
     }
 }
