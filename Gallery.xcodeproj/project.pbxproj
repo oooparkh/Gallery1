@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE68A807262977B900F89901 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A806262977B900F89901 /* Constants.swift */; };
+		CE68A80E26298DE000F89901 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A80D26298DE000F89901 /* GalleryViewController.swift */; };
+		CE68A81226299A9F00F89901 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A81126299A9F00F89901 /* PhotoCollectionViewCell.swift */; };
+		CE7C7D27262D923000B68C75 /* SelectedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C7D26262D923000B68C75 /* SelectedImageViewController.swift */; };
 		CED3A5522625801A008D272F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3A5512625801A008D272F /* AppDelegate.swift */; };
 		CED3A5542625801A008D272F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3A5532625801A008D272F /* SceneDelegate.swift */; };
-		CED3A5562625801A008D272F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3A5552625801A008D272F /* ViewController.swift */; };
+		CED3A5562625801A008D272F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3A5552625801A008D272F /* StartViewController.swift */; };
 		CED3A5592625801A008D272F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED3A5572625801A008D272F /* Main.storyboard */; };
 		CED3A55B2625801B008D272F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED3A55A2625801B008D272F /* Assets.xcassets */; };
 		CED3A55E2625801B008D272F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED3A55C2625801B008D272F /* LaunchScreen.storyboard */; };
@@ -20,10 +24,14 @@
 		1F6CAD6D04CFA53964493CAB /* Pods-Gallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gallery.release.xcconfig"; path = "Target Support Files/Pods-Gallery/Pods-Gallery.release.xcconfig"; sourceTree = "<group>"; };
 		388744FD0C059EBA17A21A8E /* Pods-Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gallery.debug.xcconfig"; path = "Target Support Files/Pods-Gallery/Pods-Gallery.debug.xcconfig"; sourceTree = "<group>"; };
 		A2F8A5FEFF07CCD49F99FCD8 /* Pods_Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE68A806262977B900F89901 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE68A80D26298DE000F89901 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		CE68A81126299A9F00F89901 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE7C7D26262D923000B68C75 /* SelectedImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageViewController.swift; sourceTree = "<group>"; };
 		CED3A54E2625801A008D272F /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED3A5512625801A008D272F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED3A5532625801A008D272F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED3A5552625801A008D272F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CED3A5552625801A008D272F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CED3A5582625801A008D272F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED3A55A2625801B008D272F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED3A55D2625801B008D272F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,19 +79,13 @@
 		CE1758F32625D5D200C475B2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CED3A5552625801A008D272F /* StartViewController.swift */,
+				CE68A80D26298DE000F89901 /* GalleryViewController.swift */,
+				CE7C7D26262D923000B68C75 /* SelectedImageViewController.swift */,
 				CED3A5572625801A008D272F /* Main.storyboard */,
 				CED3A55C2625801B008D272F /* LaunchScreen.storyboard */,
-				CE1758F42625D5E900C475B2 /* VCs */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		CE1758F42625D5E900C475B2 /* VCs */ = {
-			isa = PBXGroup;
-			children = (
-				CED3A5552625801A008D272F /* ViewController.swift */,
-			);
-			path = VCs;
 			sourceTree = "<group>";
 		};
 		CE1758F52625D61B00C475B2 /* Resources */ = {
@@ -92,6 +94,22 @@
 				CED3A55A2625801B008D272F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE68A8052629773800F89901 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE68A806262977B900F89901 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE7C7D2A262DAF0700B68C75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE68A81126299A9F00F89901 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CED3A5452625801A008D272F = {
@@ -118,6 +136,8 @@
 				CE1758F22625D5AE00C475B2 /* Application */,
 				CE1758F32625D5D200C475B2 /* Modules */,
 				CE1758F52625D61B00C475B2 /* Resources */,
+				CE68A8052629773800F89901 /* Utils */,
+				CE7C7D2A262DAF0700B68C75 /* Views */,
 				CED3A55F2625801B008D272F /* Info.plist */,
 			);
 			path = Gallery;
@@ -237,9 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED3A5562625801A008D272F /* ViewController.swift in Sources */,
+				CED3A5562625801A008D272F /* StartViewController.swift in Sources */,
 				CED3A5522625801A008D272F /* AppDelegate.swift in Sources */,
+				CE68A80E26298DE000F89901 /* GalleryViewController.swift in Sources */,
 				CED3A5542625801A008D272F /* SceneDelegate.swift in Sources */,
+				CE7C7D27262D923000B68C75 /* SelectedImageViewController.swift in Sources */,
+				CE68A807262977B900F89901 /* Constants.swift in Sources */,
+				CE68A81226299A9F00F89901 /* PhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -371,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -390,11 +414,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMPAP34679;
 				INFOPLIST_FILE = Gallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vironit.test.Gallery;
+				PRODUCT_BUNDLE_IDENTIFIER = parkhamovich.weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,8 +433,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2C9AD2CM5;
+				DEVELOPMENT_TEAM = XMPAP34679;
 				INFOPLIST_FILE = Gallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
